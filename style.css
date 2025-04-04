@@ -1,0 +1,176 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #ffe6f0); /* Soft pink gradient */
+    color: #4a2c3b; /* Darker pinkish-brown for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-color: #fce4ec; /* Light pink fallback */
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Increased max-width for larger screens */
+    background: rgba(255, 245, 247, 0.9); /* Light pink with transparency */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px; /* Reduced padding for smaller screens */
+    box-shadow: 0 10px 40px rgba(235, 160, 180, 0.2); /* Pinkish shadow */
+    margin: 20px; /* Added margin for spacing on small screens */
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(145deg, #ffccd5, #FFCCE0); /* Pink gradient */
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em; /* Reduced for smaller screens */
+    font-weight: bold;
+    color: #d81b60; /* Vibrant pink for heading */
+}
+
+header .intro {
+    font-size: 1em;
+    font-weight: 600;
+    color: #ad1457; /* Darker pink for intro text */
+}
+
+/* Info Sections */
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h2 {
+    color: #f06292; /* Medium pink for section headings */
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5em; /* Adjusted for responsiveness */
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible columns */
+    gap: 10px;
+    font-size: 1em;
+    color: #880e4f; /* Deep pink for text */
+    padding: 15px;
+    background-color: #ffebee; /* Very light pink background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.2); /* Pink shadow */
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px; /* Smaller default size for mobile */
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f48fb1; /* Adjusted border thickness */
+    transition: transform 0.3s;
+    box-shadow: 0 5px 20px rgba(244, 143, 177, 0.3); /* Pink shadow */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Education */
+.education-grid {
+    display: grid;
+    gap: 15px;
+    font-size: 1em;
+    color: #880e4f; /* Deep pink */
+    padding: 15px;
+    background-color: #ffebee; /* Light pink background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.2); /* Pink shadow */
+}
+
+.education-item {
+    padding: 10px;
+    background-color: #ffdfed; /* Slightly darker pink */
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.1);
+    line-height: 1.5;
+}
+
+/* Family Info Section */
+.family-background {
+    grid-column: span 2; /* Still spans 2 columns on larger screens */
+}
+
+/* Hobbies Section */
+.hobbies {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffebee; /* Light pink */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.2); /* Pink shadow */
+}
+
+.hobbies h2 {
+    color: #f06292; /* Medium pink */
+}
+
+.hobbies p {
+    font-size: 1em;
+    color: #c2185b; /* Darker pink for text */
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 15px;
+    background: #ffebee; /* Light pink */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(240, 98, 146, 0.2); /* Pink shadow */
+}
+
+.contact h2 {
+    color: #f06292; /* Medium pink */
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    font-weight: 600;
+    color: #880e4f; /* Deep pink */
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #f06292; /* Medium pink button */
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
